@@ -1,0 +1,49 @@
+<mvc:View
+    controllerName="testprint.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+				  <content >				  				
+					<Table id="Tabla" growing="true" growingThreshold="10" paste="onPaste"
+							items="{ path: 'ContextoTabla>/Evaluaciones',
+									sorter: { path: 'Descripcion',
+											  descending: false											  
+											}
+									}"	>
+					 <headerToolbar>
+					  <OverflowToolbar id="otbSubheader">
+						  <Title text="Listado" level="H2" />
+						  <ToolbarSpacer />
+						  <Button id="Print" text="PDF" type="Transparent"
+							      press="onPrint" icon="sap-icon://print" tooltip="Imprimir" />						
+					  </OverflowToolbar>
+				     </headerToolbar>
+					 <columns>
+					   <Column width="12em">
+						 <Text text="Descripcion" />
+					    </Column>
+						<Column minScreenWidth="Tablet" demandPopin="true" >
+						 <Text text="Evaluacion" />
+					    </Column>					
+				     </columns>
+					<items>
+					<ColumnListItem>						
+						<cells>
+							<Text text="{ContextoTabla>Descripcion}"/>
+							<Text text="{ContextoTabla>Evaluacion}"/>
+						</cells>																			
+					</ColumnListItem>
+				    </items>
+				</Table>					 				
+				
+				</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

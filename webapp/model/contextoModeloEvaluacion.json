@@ -1,0 +1,21 @@
+{
+    "Evaluaciones":[
+        {
+        "Descripcion": "Evaluacion 1",        
+        "Evaluacion": "80"       
+        },
+        {
+        "Descripcion": "Evaluacion 2",        
+        "Evaluacion": "95"       
+        },
+        {
+        "Descripcion": "Evaluacion 3",        
+        "Evaluacion": "98"       
+        },
+        {
+        "Descripcion": "Evaluacion 4",        
+        "Evaluacion": "100"       
+        }
+
+    ]
+}
